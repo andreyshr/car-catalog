@@ -1,9 +1,9 @@
+import carsJson from '../data/cars.json';
 import { fromDto } from '../mappers/car';
 
-export default defineEventHandler(async () => {
+export default defineEventHandler(() => {
   try {
-    const cars = await import('../data/cars.json');
-    return cars.default.map(fromDto);
+    return carsJson.map(fromDto);
   } catch (err) {
     throw createError({
       statusCode: 500,

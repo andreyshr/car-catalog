@@ -1,6 +1,6 @@
 # Car Catalog
 
-[Preview SPA build](https://car-catalog-demo.netlify.app/)
+[Preview SSR build](https://car-catalog-demo.netlify.app/)
 
 ## Что сделано
 
